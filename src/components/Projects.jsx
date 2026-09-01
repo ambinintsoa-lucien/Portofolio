@@ -50,17 +50,18 @@ export default function Projects() {
         <div className="flex flex-col gap-8">
           {filtered.map((project, i) => (
             <Reveal key={project.id} variant={i % 2 === 0 ? "hud" : "hud-right"} delay={(i % 3) * 100}>
-              <Link
+             
+                           <Link
                 to={`/projets/${project.id}`}
                 className="group block p-[2px] clip-hud bg-gradient-to-br from-hud-blue/70 via-hud-blue/20 to-hud-blue/70 hover:shadow-hud-blue transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="clip-hud bg-base-800 grid sm:grid-cols-2">
-                  <div className="aspect-video sm:aspect-auto bg-base-700 flex items-center justify-center overflow-hidden p-4">
+                <div className="clip-hud bg-base-800 flex flex-col">
+                  <div className="w-full aspect-video bg-base-700 flex items-center justify-center overflow-hidden p-4">
                     {project.image ? (
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="max-w-[75%] max-h-56 w-auto h-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                        className="max-w-full max-h-56 w-auto h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
                       <span className="font-head text-xs tracking-widest text-ink-500 uppercase">
@@ -70,6 +71,8 @@ export default function Projects() {
                   </div>
 
                   <div className="p-7 flex flex-col justify-center">
+
+
                     {project.tags?.length > 0 && (
                       <div className="flex flex-wrap gap-2 mb-2">
                         {project.tags.map((tag) => (

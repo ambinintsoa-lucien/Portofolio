@@ -19,17 +19,17 @@ export default function Formation() {
           <h2 className="font-display text-3xl md:text-4xl text-ink-100">Formation</h2>
         </Reveal>
 
-        <div className="grid sm:grid-cols-2 gap-6">
+               <div className="grid sm:grid-cols-2 gap-6 auto-rows-fr">
           {formation.map((item, i) => (
-            <Reveal key={item.number} variant="fade" delay={i * 90}>
+            <Reveal key={item.number} variant="fade" delay={i * 90} className="h-full">
               <div
-                className={`bg-base-800 border-[3px] ${COLOR_MAP[item.color].border} ${COLOR_MAP[item.color].shadow} p-6 relative transition-all duration-300 hover:-translate-y-1.5`}
+                className={`h-full flex flex-col bg-base-800 border-[3px] ${COLOR_MAP[item.color].border} ${COLOR_MAP[item.color].shadow} p-6 relative transition-all duration-300 hover:-translate-y-1.5`}
               >
                 <span className="font-display text-2xl text-ink-100/90">{item.number}</span>
                 <h3 className="mt-3 font-head text-lg tracking-wide text-ink-100">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm text-ink-500 leading-relaxed">{item.text}</p>
+                <p className="mt-2 text-sm text-ink-500 leading-relaxed flex-1">{item.text}</p>
                 <span className={`mt-4 block w-10 h-[3px] ${COLOR_MAP[item.color].bg}`} />
               </div>
             </Reveal>

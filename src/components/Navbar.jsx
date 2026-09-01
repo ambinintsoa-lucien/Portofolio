@@ -44,9 +44,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-base-950/85 backdrop-blur-md border-b border-white/5" : "bg-transparent"
-      }`}
+      className={`fixed top-0 inset-x-0 z-50 backdrop-blur-md border-b border-white/5 transition-colors duration-300 ${
+  scrolled ? "bg-base-950/90" : "bg-base-950/40"
+}`}
+      
     >
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <button
