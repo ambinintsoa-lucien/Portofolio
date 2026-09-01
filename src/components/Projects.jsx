@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import projects from "../data/projects"
 import Reveal from "./Reveal"
 
+
 export default function Projects() {
   const allTags = useMemo(() => {
     const set = new Set()
@@ -47,7 +48,7 @@ export default function Projects() {
           </Reveal>
         )}
 
-        <div className="flex flex-col gap-8">
+                <div className="grid sm:grid-cols-2 gap-8">
           {filtered.map((project, i) => (
             <Reveal key={project.id} variant={i % 2 === 0 ? "hud" : "hud-right"} delay={(i % 3) * 100}>
              
@@ -56,7 +57,7 @@ export default function Projects() {
                 className="group block p-[2px] clip-hud bg-gradient-to-br from-hud-blue/70 via-hud-blue/20 to-hud-blue/70 hover:shadow-hud-blue transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="clip-hud bg-base-800 flex flex-col">
-                  <div className="w-full aspect-video bg-base-700 flex items-center justify-center overflow-hidden p-4">
+                                                      <div className="w-full h-56 bg-base-700 flex items-center justify-center overflow-hidden p-4">
                     {project.image ? (
                       <img
                         src={project.image}

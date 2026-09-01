@@ -47,17 +47,17 @@ export default function Contact() {
         <Reveal variant="gold">
           <div className="p-[2px] clip-corners bg-gradient-to-br from-gold-400 via-gold-600 to-gold-400 shadow-gold transition-shadow duration-300 hover:shadow-[0_0_36px_rgba(201,161,95,0.5)]">
             <div className="clip-corners bg-base-900 p-8 md:p-12">
-              <ul className="grid sm:grid-cols-3 gap-4 mb-10">
+              <ul className="grid sm:grid-cols-3 gap-4 mb-10 min-w-0">
                 {CONTACT_INFO.map((item) => (
-                  <li key={item.label}>
-                    <a
-                      href={item.href}
-                      className="block border border-gold-600/40 hover:border-gold-400 px-4 py-3 text-center transition-colors duration-200"
+                  <li key={item.label} className="min-w-0">
+                    
+                    <a  href={item.href}
+                      className="block min-w-0 border border-gold-600/40 hover:border-gold-400 px-4 py-3 text-center transition-colors duration-200"
                     >
                       <span className="block font-head text-[11px] tracking-[0.2em] text-gold-500 uppercase">
                         {item.label}
                       </span>
-                      <span className="block mt-1 text-sm text-ink-300 truncate">
+                      <span className="block mt-1 text-sm text-ink-300 break-words">
                         {item.value}
                       </span>
                     </a>

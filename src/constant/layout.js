@@ -1,0 +1,3 @@
+// Change cette seule valeur pour ajuster la hauteur du cadre image
+// des projets partout à la fois (cartes de l'accueil + page de détail).
+export const PROJECT_IMAGE_HEIGHT = "h-56" // h-48, h-56, h-64, h-72...

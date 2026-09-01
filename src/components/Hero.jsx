@@ -7,8 +7,8 @@ export default function Hero() {
       className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900"
     >
       <div className="absolute inset-0 bg-noise opacity-20 pointer-events-none" />
+                  <div className="relative z-10 w-full max-w-6xl mx-auto px-6 pt-28 pb-16 grid md:grid-cols-[1fr_auto] gap-10 md:gap-16 items-center">
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 pt-28 pb-16 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         {/* Text side */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
           <div className="border border-white/70 hover:border-neon-blue px-6 py-5 sm:px-8 sm:py-6 w-fit max-w-[90vw] sm:max-w-sm backdrop-blur-[2px] transition-colors duration-300">
@@ -44,10 +44,10 @@ export default function Hero() {
 
         {/* Photo side, right, contained (not full background) */}
         <div className="order-1 md:order-2 flex justify-center md:justify-end">
-          <img
+                    <img
             src={heroPhoto}
             alt="Portrait"
-            className="w-64 sm:w-80 md:w-96 lg:w-[28rem] h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
+            className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
           />
         </div>
       </div>

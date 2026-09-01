@@ -38,8 +38,8 @@ export default function ProjectDetail() {
             <ArrowLeft size={16} /> Retour aux projets
           </Link>
 
-          <div className="p-[2px] clip-hud bg-gradient-to-br from-hud-blue/70 via-hud-blue/20 to-hud-blue/70">
-            <div className="clip-hud bg-base-800 aspect-video flex items-center justify-center overflow-hidden p-4">
+                    <div className="p-[2px] clip-hud bg-gradient-to-br from-hud-blue/70 via-hud-blue/20 to-hud-blue/70">
+                               <div className="clip-hud bg-base-800 aspect-video flex items-center justify-center overflow-hidden p-4">
               {project.image ? (
                 <img
                   src={project.image}
