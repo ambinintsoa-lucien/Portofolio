@@ -12,7 +12,7 @@ const EMAILJS_PUBLIC_KEY = "bs-Hgi6q8SEWDqKar"
 const CONTACT_INFO = [
   { label: "Email", value: "lucien.rakotoambinintsoa@student.passerellesnumeriques.org", href: "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" },
   { label: "Téléphone", value: "+261 07 787 35", href: "tel:+261380778735" },
-  { label: "LinkedIn", value: "Lucine RAKOTOAMBININTSOA", href: "https://www.linkedin.com/feed/" },
+  { label: "LinkedIn", value: "Lucien RAKOTOAMBININTSOA", href: "https://www.linkedin.com/feed/" },
 ]
 
 export default function Contact() {
