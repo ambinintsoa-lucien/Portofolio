@@ -23,7 +23,7 @@ export default function About() {
         <Reveal variant="neon" className="relative mx-auto w-full max-w-sm sm:max-w-md md:max-w-lg group/frame">
           <div ref={ref} className="relative">
             <div className="p-[3px] clip-hud-lg bg-gradient-to-br from-neon-pink via-neon-blue to-neon-violet shadow-neon-blue transition-transform duration-500 group-hover/frame:scale-[1.02]">
-              <div className="clip-hud-lg bg-base-900 relative min-h-[320px] sm:min-h-[300px] overflow-hidden">
+              <div className="clip-hud-lg bg-base-900 relative min-h-[360px] sm:min-h-[300px] overflow-hidden">
                 {inView && (
                   <div className="absolute inset-0 overflow-hidden animate-screen-on">
                     {/* scanline sweep, once */}
